@@ -3,12 +3,15 @@
 
 # Function to find the sum of even Fibonacci numbers
 
-def even_fibonacci_sum(n):
+def even_fibonacci_sum(limit):
     a = 1
     b = 2
     sum = 0
-    while b < n:
+    limit = 50
+    while b < limit:
         if b % 2 == 0:
             sum += b
         a, b = b, a+b
-    return sum 
+    return sum
+result = even_fibonacci_sum(50)
+print(result)
