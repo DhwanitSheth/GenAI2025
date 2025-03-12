@@ -87,4 +87,44 @@ def even_fibonacci_sum(limit):
 result = even_fibonacci_sum(50)
 print(result)
 
-Project Euler Problem #3
+Project Euler Problem # 3
+
+Problem statement
+Break into
+    largest factor
+    prime
+Steps
+is_factor(number,index)
+
+inputs:
+  number
+  index
+steps:
+  return number%index == 0
+Example is_factor(10,3) => False is_factor(100,10) => True
+is_prime(number)
+inputs: number
+output: True if prime False otherwise
+steps:
+    index = 2
+    result = True
+    unless index < number do the following
+      if is_factor(number, index) == True:
+         result = False
+         exit
+      end
+      index = index + 1
+    end
+    return result
+Example is_prime(10) = False, is_prime(21) => False, is_prime(11) => true
+
+Solution
+number = 70
+index = number//2
+until index > 2 do the following
+  if is_factor(number,index) and is_prime(index) == true then
+        print index
+        exit
+  end
+  index = index - 1
+end
