@@ -1,4 +1,4 @@
-Prject Eular Problem #9
+Project Eular Problem #9
 
     # a + b + c = 12
     # a^2 + b^2 = c^2
